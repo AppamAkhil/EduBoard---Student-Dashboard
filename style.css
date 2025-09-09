@@ -1,0 +1,274 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-color: #f4f6f8;
+  color: #1f2937;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #1f2937;
+  color: white;
+}
+@media (min-width: 769px) {
+  .sidebar {
+    width: 220px;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+}
+
+
+.sidebar .logo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1.2rem 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease; /* move here */
+}
+
+
+.sidebar nav ul li a:hover {
+  color: #10b981; /* green highlight */
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notifications {
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.notifications .badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Overview Cards */
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin: 0;
+  color: #3b82f6;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0 0;
+}
+
+.overview-cards .card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Progress Table */
+.progress-table {
+  margin-bottom: 2rem;
+}
+
+.progress-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.progress-table th, .progress-table td {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.progress-table th {
+  background-color: #1f2937;
+  color: white;
+}
+
+.progress-bar {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  height: 15px;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  background-color: #3b82f6;
+  border-radius: 8px;
+}
+
+.progress-table tbody tr:hover {
+  background-color: #f0f9ff; /* light blue */
+  transition: background-color 0.3s ease;
+}
+
+/* Upcoming Deadlines */
+.deadlines ul {
+  list-style: none;
+  padding: 0;
+}
+
+.deadlines li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.deadlines .date {
+  font-weight: bold;
+  color: #3b82f6;
+  width: 80px;
+}
+
+.deadlines li:hover {
+  background-color: #e0f2fe; /* light blue */
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Student Profile Info */
+.profile-info .profile-card {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.profile-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-info .info p {
+  margin: 0.3rem 0;
+}
+
+.profile-info .profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: #1f2937;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .sidebar nav ul li {
+    margin: 0.5rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+

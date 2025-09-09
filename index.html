@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBoard - Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 class="logo">EduBoard</h2>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+        <li><a href="#"><i class="fas fa-user-check"></i> Attendance</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+</div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Student Dashboard</h1>
+      <div class="header-right">
+        <div class="notifications">
+          <i class="fas fa-bell"></i>
+          <span class="badge">3</span>
+        </div>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student Avatar">
+          <span>John Doe</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Overview Cards -->
+    <section class="overview-cards">
+      <div class="card">
+        <h3>GPA</h3>
+        <p>3.8 / 4.0</p>
+      </div>
+      <div class="card">
+        <h3>Attendance %</h3>
+        <p>92%</p>
+      </div>
+      <div class="card">
+        <h3>Assignments Due</h3>
+        <p>5</p>
+      </div>
+      <div class="card">
+        <h3>Total Credits</h3>
+        <p>120</p>
+      </div>
+    </section>
+
+    <!-- Progress Table -->
+    <section class="progress-table">
+      <h2>Subjects Progress</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Instructor</th>
+            <th>Completion %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>Dr. Smith</td>
+            <td>
+              <div class="progress-bar">
+                <div class="fill" style="width: 85%;"></div>
+              </div>
+              85%
+            </td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>Prof. Johnson</td>
+            <td>
+              <div class="progress-bar">
+                <div class="fill" style="width: 70%;"></div>
+              </div>
+              70%
+            </td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td>Dr. Lee</td>
+            <td>
+              <div class="progress-bar">
+                <div class="fill" style="width: 90%;"></div>
+              </div>
+              90%
+            </td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>Prof. Davis</td>
+            <td>
+              <div class="progress-bar">
+                <div class="fill" style="width: 95%;"></div>
+              </div>
+              95%
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Upcoming Deadlines -->
+    <section class="deadlines">
+      <h2>Upcoming Deadlines</h2>
+      <ul>
+        <li>
+          <span class="date">Sep 10</span>
+          <span class="task">Math Assignment 3</span>
+        </li>
+        <li>
+          <span class="date">Sep 12</span>
+          <span class="task">Physics Lab Report</span>
+        </li>
+        <li>
+          <span class="date">Sep 15</span>
+          <span class="task">Chemistry Quiz</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Student Profile Info -->
+    <section class="profile-info">
+      <h2>Student Info</h2>
+      <div class="profile-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Student Avatar">
+        <div class="info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Roll No:</strong> 123456</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>College:</strong> ABC University</p>
+          <p><strong>Department:</strong> Computer Science</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
